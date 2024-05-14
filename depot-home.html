@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="depot-home.css">
+    <link rel="stylesheet" href="css/depot-home.css">
+    <link rel="stylesheet" href="cssHelper/helper.css">
     <title>www.depot.com</title>
 </head>
 
 <body>
     <!-- <div class="intro absolute w-full h-full z-high black-bg flex j-center a-center flex-column">
         <video autoplay src="images/depot-intro.mp4" type="video/mp4"></video>
+        <img src="images/depot-logo.png" alt="" class="absolute intro-logo">
         <p class="t-center font-sm absolute light">
             Beware of your style
         </p>
@@ -60,7 +62,7 @@
                     </li>
                 </ul>
                 <a href="" class="white-clr radius-vh sign-in pointer">
-                    <button class="radius-vh full green-clr white-clr pointer">
+                    <button class="radius-vh full green-clr black-clr  pointer">
                         Sign in
                     </button>
                 </a>
@@ -149,9 +151,1001 @@
     <!-- header section ends  -->
 
     <!-- home section starts  -->
-    <section id="home">
-        
+    <section id="home" class="flex flex-column g-2">
+        <div class="ads-wrapper w-full">
+            <div class="ads-container w-full">
+                <img src="images/ad-1.jpg" alt="" class="w-full">
+            </div>
+        </div>
+        <div class="categories p-center grid repeat-5 p-2 gap-2">
+            <div class="items flex flex-column gap-1 a-center w-full radius">
+                <div class="image w-full">
+                    <img src="images/shoe.jpg" alt="" class="w-full radius">
+                </div>
+                <p class="bold font-sm">Mens shoes</p>
+            </div>
+            <div class="items flex flex-column gap-1 a-center w-full radius">
+                <div class="image w-full">
+                    <img src="images/men-dress.png" alt="" class="w-full radius">
+                </div>
+                <p class="bold font-sm">Mens Shirts</p>
+            </div>
+            <div class="items flex flex-column gap-1 a-center w-full radius">
+                <div class="image w-full">
+                    <img src="images/watch.jpg" alt="" class="w-full radius">
+                </div>
+                <p class="bold font-sm">Watches</p>
+            </div>
+            <div class="items flex flex-column gap-1 a-center w-full radius">
+                <div class="image w-full">
+                    <img src="images/girl-dress.jpg" alt="" class="w-full radius">
+                </div>
+                <p class="bold font-sm">Girls dresses</p>
+            </div>
+            <div class="items flex flex-column gap-1 a-center w-full radius">
+                <div class="image w-full">
+                    <img src="images/speaker.jpg" alt="" class="w-full radius">
+                </div>
+                <p class="bold font-sm">Speakers</p>
+            </div>
+        </div>
     </section>
+    <section id="products">
+        <div class="container p-inline-2 w-full">
+            <div class="products-list p-inline-4 grid repeat-3 gap-3 w-full p-center">
+                <div class="items w-full white-bg grid repeat-2 gap-1">
+                    <div class="product full flex flex-column">
+                        <img src="images/shoe.jpg" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                    <div class="product full flex flex-column">
+                        <img src="images/speaker.jpg" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                    <div class="product full flex flex-column">
+                        <img src="images/girl-dress.jpg" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                    <div class="product full flex flex-column">
+                        <img src="images/men-dress.png" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                </div>
+                <div class="items w-full white-bg grid repeat-2 gap-1">
+                    <div class="product full flex flex-column">
+                        <img src="images/shoe.jpg" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                    <div class="product full flex flex-column">
+                        <img src="images/speaker.jpg" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                    <div class="product full flex flex-column">
+                        <img src="images/girl-dress.jpg" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                    <div class="product full flex flex-column">
+                        <img src="images/men-dress.png" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                </div>
+                <div class="items w-full white-bg grid repeat-2 gap-1">
+                    <div class="product full flex flex-column">
+                        <img src="images/shoe.jpg" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                    <div class="product full flex flex-column">
+                        <img src="images/speaker.jpg" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                    <div class="product full flex flex-column">
+                        <img src="images/girl-dress.jpg" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                    <div class="product full flex flex-column">
+                        <img src="images/men-dress.png" alt="" class="w-full">
+                        <p class="ml-1 mt-1">Nike shoes mensware specialy editon by the nike</p>
+                        <div class="star flex a-center" style="margin-left: 0.6rem;">
+                            <span class="material-symbols-rounded flex j-start warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                            <span class="material-symbols-rounded warning-clr">
+                                star
+                            </span>
+                        </div>
+                        <p class="price font-md bold ml-1">
+                            8993$
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ads-wrapper w-full mt-2">
+            <div class="ads-container w-full">
+                <img src="images/ad-1.jpg" alt="" class="w-full">
+            </div>
+        </div>
+        <div class="ads-wrapper w-full">
+            <div class="ads-container w-full">
+                <img src="images/ad-depot.png" alt="" class="w-full">
+            </div>
+        </div>
+        <div class="slogan flex gap-3 a-center p-inline-4 mt-2 w-full">
+            <p class="bold">
+                Elevate your style <br>
+                with our products.
+            </p>
+            <div class="elevate-items grid repeat-4 p-center gap-1">
+                <div class="items w-full radius">
+                    <img src="images/men-dress.png" alt="" class="full cover radius">
+                </div>
+                <div class="items w-full radius">
+                    <img src="images/girl-dress.jpg" alt="" class="full cover radius">
+                </div>
+                <div class="items w-full radius">
+                    <img src="images/watch.jpg" alt="" class="full cover radius">
+                </div>
+                <div class="items w-full radius">
+                    <img src="images/shoe.jpg" alt="" class="full cover radius">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sales">
+        <div class="container p-inline-2 grid repeat-5 gap-2 p-center full mt-3">
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+            <div class="items w-full flex flex-column radius relative">
+                <span class="material-symbols-rounded absolute">
+                    favorite
+                </span>
+                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <p class="ml-1 mt-1">
+                    Constant Cotton Thermoregulating Pique
+                </p>
+                <div class="star flex a-center" style="margin-left: 0.7rem;">
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                    <span class="material-symbols-rounded">
+                        grade
+                    </span>
+                </div>
+                <p class="bold font-md ml-1">
+                    6464 Rs
+                </p>
+                <p class="ml-1 mt-1">
+                    Flagship sale now offer up to 60% off
+                </p>
+                <p class="mt-1 bold" style="text-align: center;">
+                    Free depot's delivery
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="sponsored">
+        <div class="container flex gap-2 full a-center p-inline-3 pt-3">
+            <div class="video">
+                <iframe class="radius full" width="560" height="315"
+                    src="https://www.youtube.com/embed/s4xnyr2mCuI?si=y2rxdoPTVdMDaWdL" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="sponsored-list grid repeat-2 gap-2 p-center">
+                <div class="items w-full white-bg p-2 flex flex-column gap-1">
+                    <p class="font-md bold">
+                        Top stylish and treding items for you
+                    </p>
+                    <div class="image-grid grid repeat-2 gap-1 w-full">
+                        <div class="items w-full">
+                            <img src="images/girl-dress.jpg" alt="" class="w-full cover">
+                            <p class="font">
+                                Mensware
+                            </p>
+                        </div>
+                        <div class="items w-full">
+                            <img src="images/men-dress.png" alt="" class="w-full cover">
+                            <p class="font">
+                                Mensware
+                            </p>
+
+                        </div>
+                        <div class="items w-full">
+                            <img src="images/shoe.jpg" alt="" class="w-full cover">
+                            <p class="font">
+                                Mensware
+                            </p>
+
+                        </div>
+                        <div class="items w-full">
+                            <img src="images/speaker.jpg" alt="" class="w-full cover">
+                            <p class="font">
+                                Mensware
+                            </p>
+
+                        </div>
+                    </div>
+                    <p class="mt-2 link-clr pointer">
+                        See the all trends
+                    </p>
+                </div>
+                <div class="items w-full white-bg p-2 flex flex-column gap-1">
+                    <p class="font-md bold">
+                        Top stylish and treding items for you
+                    </p>
+                    <div class="image-grid grid repeat-2 gap-1 w-full">
+                        <div class="items w-full">
+                            <img src="images/girl-dress.jpg" alt="" class="w-full cover">
+                            <p class="font">
+                                Mensware
+                            </p>
+                        </div>
+                        <div class="items w-full">
+                            <img src="images/men-dress.png" alt="" class="w-full cover">
+                            <p class="font">
+                                Mensware
+                            </p>
+
+                        </div>
+                        <div class="items w-full">
+                            <img src="images/shoe.jpg" alt="" class="w-full cover">
+                            <p class="font">
+                                Mensware
+                            </p>
+
+                        </div>
+                        <div class="items w-full">
+                            <img src="images/speaker.jpg" alt="" class="w-full cover">
+                            <p class="font">
+                                Mensware
+                            </p>
+
+                        </div>
+                    </div>
+                    <p class="mt-2 link-clr pointer">
+                        See the all trends
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="ads-wrapper w-full">
+            <div class="ads-container w-full">
+                <img src="images/ad-depot.png" alt="" class="w-full">
+            </div>
+        </div>
+        <div class="ads-wrapper w-full">
+            <div class="ads-container w-full">
+                <img src="images/ad-depot.png" alt="" class="w-full">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top w-full">
+
+        </div>
+        <div class="footer-bottom w-full">
+            
+        </div>
+    </footer>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var scrollY = window.scrollY || window.pageYOffset;
+            var headerBottom = document.querySelector('.bottom-header');
+            var headerUl = document.querySelector('.bottom-header ul');
+            var headerUlLis = headerUl.querySelectorAll('li');
+
+            if (scrollY >= 240) {
+                headerBottom.style.height = '0';
+                headerUlLis.forEach(function (li) {
+                    li.style.opacity = '0';
+                });
+            } else {
+                headerBottom.style.height = '44%';
+                headerUlLis.forEach(function (li) {
+                    li.style.opacity = '1';
+                });
+            }
+        });
+
+
+
+    </script>
 </body>
 
 </html>
