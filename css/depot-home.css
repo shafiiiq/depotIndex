@@ -369,13 +369,14 @@ header .top img {
 .search {
   width: 35%;
   height: 3rem;
-  border: 2px solid #272a34;
   border-radius: 100vh;
-  padding-inline: 1rem;
+  z-index: 2000000000000000000000000;
 }
 
 .search input {
+  border: 2px solid #272a34;
   color: var(--text-color);
+  background-color: var(--primary-color);
 }
 
 .search-icon {
@@ -398,6 +399,13 @@ header .top img {
 
 .sign-in button {
   font-size: 18px;
+  transition: all 0.3s cubic-bezier(0, 1.63, 1, 1);
+  border: 1px solid #424265;
+}
+
+.sign-in button:hover {
+  background-color: var(--secondary-color);
+  border: none;
 }
 
 .cart-count {
@@ -416,6 +424,29 @@ header .bottom-header ul>li {
   opacity: 1;
   /* Setting initial opacity to 1 */
   transition: opacity 0.3s ease;
+}
+
+.search-history {
+  z-index: 1000000000000000;
+  height: fit-content;
+  background-color: var(--primary-color);
+}
+
+.serach-history .list {
+  padding-block: 1rem;
+  transition: all 0.3 ease;
+}
+
+.search-history .list:hover {
+  background-color: var(--secondary-color);
+}
+
+.search-overlay {
+  top: 6rem;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: red; */
+  height: 845vh;
 }
 
 /* header section ends  */
@@ -486,7 +517,16 @@ section#sales .container .items {
   height: 25rem;
   background-color: rgb(239, 240, 241);
   padding: 0.5rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+section#sales .container .items img {
+  height: 10rem;
+}
+
+section#sales .container .items:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);;
 }
 
 section#sales .container .items>span {
@@ -496,12 +536,15 @@ section#sales .container .items>span {
 }
 
 section#sponsored {
-  height: 200vh;
+  height: 170vh;
+}
+
+section#sponsored .container {
+  height: 32rem;
 }
 
 section#sponsored .video {
   width: 50%;
-  height: 28rem;
 }
 
 .sponsored-list {
@@ -509,7 +552,6 @@ section#sponsored .video {
 }
 
 .sponsored-list .items {
-  height: 28rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -520,6 +562,28 @@ section#sponsored .video {
 
 .image-grid img {
   height: 6rem;
+}
+
+.showcase {
+  height: 18rem;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+.showcase .items {
+  height: 18rem;
+}
+
+.deals {
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.deals .showcase {
+  box-shadow: none;
+}
+
+.deals .showcase  .items{
+  height: 15rem;
 }
 
 /* --------------------------------  */

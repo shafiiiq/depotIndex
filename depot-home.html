@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div class="search-overlay absolute right bottom left" style="display: none;"></div>
     <!-- <div class="intro absolute w-full h-full z-high black-bg flex j-center a-center flex-column">
         <video autoplay src="images/depot-intro.mp4" type="video/mp4"></video>
         <img src="images/depot-logo.png" alt="" class="absolute intro-logo">
@@ -26,11 +27,31 @@
             <!-- logo of depot the warehouse -->
             <img src="images/depot-logo.png" alt="">
             <div class="search relative pointer">
-                <input type="search" class="w-full h-full radius glass" placeholder="Beware of your styles">
+                <input type="search" id="search-input" class="w-full pl-1 radius-vh h-full radius glass"
+                    placeholder="Beware of your styles">
                 <div class="search-icon absolute flex a-center j-center right">
                     <span class="material-symbols-rounded">
                         search
                     </span>
+                </div>
+                <!-- search history  -->
+                <div class="search-history absolute w-full flex flex-column" style="display: none;">
+                    <div class="list pt-1 pb-1 white-clr pointer w-full p-inline-1 flex j-between a-center">
+                        <p>
+                            Shoes for mens
+                        </p>
+                        <span class="material-symbols-rounded">
+                            north_east
+                        </span>
+                    </div>
+                    <div class="list pt-1 pb-1 white-clr pointer w-full p-inline-1 flex j-between a-center">
+                        <p>
+                            Adidas new fashion
+                        </p>
+                        <span class="material-symbols-rounded">
+                            north_east
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="navigations flex j-center a-center gap">
@@ -61,8 +82,8 @@
                         </span>
                     </li>
                 </ul>
-                <a href="" class="white-clr radius-vh sign-in pointer">
-                    <button class="radius-vh full green-clr black-clr  pointer">
+                <a href="" class="radius-vh sign-in pointer">
+                    <button class="radius-vh full green-clr white-clr glass pointer">
                         Sign in
                     </button>
                 </a>
@@ -191,8 +212,8 @@
         </div>
     </section>
     <section id="products">
-        <div class="container p-inline-2 w-full">
-            <div class="products-list p-inline-4 grid repeat-3 gap-3 w-full p-center">
+        <div class="container p-inline-3 w-full">
+            <div class="products-list grid repeat-3 gap-3 w-full p-center">
                 <div class="items w-full white-bg grid repeat-2 gap-1">
                     <div class="product full flex flex-column">
                         <img src="images/shoe.jpg" alt="" class="w-full">
@@ -484,13 +505,13 @@
             </div>
         </div>
     </section>
-    <section id="sales">
-        <div class="container p-inline-2 grid repeat-5 gap-2 p-center full mt-3">
-            <div class="items w-full flex flex-column radius relative">
+    <section id="sales" style="height: 160vh;">
+        <div class="container p-inline-3 grid repeat-5 gap-2 p-center full mt-3">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/men-dress.png" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -512,20 +533,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/watch.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -547,20 +568,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/speaker.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -582,20 +603,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/girl-dress.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -617,20 +638,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/shoe.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -652,20 +673,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/men-dress.png" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -687,20 +708,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/watch.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -722,20 +743,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/speaker.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -757,20 +778,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/girl-dress.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -792,20 +813,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/shoe.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -827,20 +848,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/men-dress.png" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -862,20 +883,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/watch.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -897,20 +918,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/speaker.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -932,20 +953,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/girl-dress.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -967,20 +988,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
-            <div class="items w-full flex flex-column radius relative">
+            <div class="items w-full pointer ease flex flex-column relative">
                 <span class="material-symbols-rounded absolute">
                     favorite
                 </span>
-                <img src="images/men-dress.png" alt="" class="w-full radius">
+                <img src="images/shoe.jpg" alt="" class="w-full cover">
                 <p class="ml-1 mt-1">
                     Constant Cotton Thermoregulating Pique
                 </p>
@@ -1002,20 +1023,20 @@
                     </span>
                 </div>
                 <p class="bold font-md ml-1">
-                    6464 Rs
+                    6464$
                 </p>
-                <p class="ml-1 mt-1">
-                    Flagship sale now offer up to 60% off
+                <p class="ml-1" class="strike">
+                    M. R . P 1020rs
                 </p>
-                <p class="mt-1 bold" style="text-align: center;">
-                    Free depot's delivery
+                <p class="ml-1 mt-1 red-clr">
+                    Flagship sale now offer up to <span class="bold">60% off</span>
                 </p>
             </div>
         </div>
     </section>
     <section id="sponsored">
-        <div class="container flex gap-2 full a-center p-inline-3 pt-3">
-            <div class="video">
+        <div class="container mb-2 flex gap-2 full a-center p-inline-3 pt-3">
+            <div class="video h-full">
                 <iframe class="radius full" width="560" height="315"
                     src="https://www.youtube.com/embed/s4xnyr2mCuI?si=y2rxdoPTVdMDaWdL" title="YouTube video player"
                     frameborder="0"
@@ -1023,8 +1044,8 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
-            <div class="sponsored-list grid repeat-2 gap-2 p-center">
-                <div class="items w-full white-bg p-2 flex flex-column gap-1">
+            <div class="sponsored-list grid repeat-2 gap-2 p-center h-full">
+                <div class="items full white-bg p-2 flex flex-column gap-1">
                     <p class="font-md bold">
                         Top stylish and treding items for you
                     </p>
@@ -1097,6 +1118,60 @@
                     <p class="mt-2 link-clr pointer">
                         See the all trends
                     </p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper w-full p-inline-3 mt-2">
+            <div class="deals w-full p-inline-1 pt-1">
+                <p class="font-md bold">
+                    Latest trending collection in the <br> market & and available here
+                </p>
+                <div class="showcase grid repeat-7 gap-1 w-full p-center">
+                    <div class="items w-full">
+                        <img src="images/shoe.jpg" alt="" class="full cover">
+                    </div>
+                    <div class="items w-full">
+                        <img src="images/speaker.jpg" alt="" class="full cover">
+                    </div>
+                    <div class="items w-full">
+                        <img src="images/girl-dress.jpg" alt="" class="full cover">
+                    </div>
+                    <div class="items w-full">
+                        <img src="images/watch.jpg" alt="" class="full cover">
+                    </div>
+                    <div class="items w-full">
+                        <img src="images/men-dress.png" alt="" class="full cover">
+                    </div>
+                    <div class="items w-full">
+                        <img src="images/speaker.jpg" alt="" class="full cover">
+                    </div>
+                    <div class="items w-full">
+                        <img src="images/girl-dress.jpg" alt="" class="full cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper w-full p-inline-3 mt-2">
+            <div class="deals w-full p-inline-1 pt-1">
+                <p class="font-md bold">
+                    Top deals of today for you
+                </p>
+                <div class="showcase grid repeat-5 gap-1 w-full p-center">
+                    <div class="items w-full">
+                        <img src="images/shoe.jpg" alt="" class="full cover">
+                    </div>
+                    <div class="items w-full">
+                        <img src="images/speaker.jpg" alt="" class="full cover">
+                    </div>
+                    <div class="items w-full">
+                        <img src="images/girl-dress.jpg" alt="" class="full cover">
+                    </div>
+                    <div class="items w-full">
+                        <img src="images/watch.jpg" alt="" class="full cover">
+                    </div>
+                    <div class="items w-full">
+                        <img src="images/men-dress.png" alt="" class="full cover">
+                    </div>
                 </div>
             </div>
         </div>
@@ -1118,7 +1193,7 @@
 
         </div>
         <div class="footer-bottom w-full">
-            
+
         </div>
     </footer>
 
@@ -1143,7 +1218,30 @@
             }
         });
 
+        document.getElementById('search-input').addEventListener('click', function () {
+            document.querySelector('.search-history').style.display = 'flex';
+            document.querySelector('.search-overlay').style.display = 'flex';
+            document.getElementById('search-input').style.border = '2px solid var(--accent-green)'
+        });
 
+        document.body.addEventListener('click', function (event) {
+            var searchInput = document.getElementById('search-input');
+            var searchHistory = document.querySelector('.search-history');
+            var searchOverlay = document.querySelector('.search-overlay')
+
+            // Check if the clicked element is not the search input
+            if (event.target !== searchInput && !searchHistory.contains(event.target)) {
+                searchHistory.style.display = 'none'; // Hide search history
+                searchOverlay.style.display = 'none';
+                document.getElementById('search-input').style.border = '2px solid #272a34' // Hide search overlay
+            }
+        });
+
+        window.addEventListener('scroll', function () {
+            document.querySelector('.search-overlay').style.display = 'none';
+            document.querySelector('.search-history').style.display = 'none';
+            document.getElementById('search-input').style.border = '2px solid #272a34'
+        });
 
     </script>
 </body>
